@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 import Sidebar from "components/Sidebar";
 import Dashboard from "pages/Dashboard";
 import Footer from "components/Footer";
@@ -14,7 +14,7 @@ function App() {
     <>
       <Sidebar />
       <div className="md:ml-64">
-        <BrowserRouter basename={window.location.pathname || ""}>
+        <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route exact path="/class" component={Class} />
           <Route exact path="/classId/:id" component={ClassId} />
@@ -22,10 +22,7 @@ function App() {
           <Route exact path="/instructorId/:id" component={InstructorId} />
           <Route exact path="/login" component={SignIn} />
           <Redirect from="*" to="/" />
-        </BrowserRouter>
-        {/* <Switch>
-         
-        </Switch> */}
+        </Switch>
         <Footer />
       </div>
     </>
