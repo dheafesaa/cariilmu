@@ -1,17 +1,19 @@
 module.exports = {
-    mode: 'jit',
-    purge: ['./src/**/*.js', './public/index.html'],
-    darkMode: false, // or 'media' or 'class'
-    theme: {
-        fontFamily: {
-            sans: ['Roboto', 'sans-serif'],
-            serif: ['"Roboto Slab"', 'serif'],
-            body: ['Roboto', 'sans-serif'],
-        },
-        extend: {},
+  content: [
+    // Example content paths...
+    "./public/**/*.html",
+    "./src/**/*.{js,jsx,ts,tsx,vue}",
+  ],
+  theme: {
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+      serif: ['"Roboto Slab"', "serif"],
+      body: ["Roboto", "sans-serif"],
     },
-    variants: {
-        extend: {},
-    },
-    plugins: [],
+    extend: {},
+  },
+  variants: {
+    extend: {},
+  },
+  plugins: [],
 };
