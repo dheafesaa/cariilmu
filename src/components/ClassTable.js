@@ -11,6 +11,7 @@ import EditIc from "assets/img/edit.svg";
 
 export default function ClassTable() {
   const dispatch = useDispatch();
+  
   const stateUsers = useSelector((state) => state.users.users);
 
   useEffect(() => {
@@ -56,7 +57,7 @@ export default function ClassTable() {
                         {++index}
                       </th>
                       <th className="border-b border-gray-200 align-middle font-light text-sm whitespace-nowrap px-2 py-4 text-left">
-                        <Link to={`/detail/${item.id}`}>
+                        <Link to={`/classId/${item.id}`}>
                           {item.name}
                         </Link>
                       </th>

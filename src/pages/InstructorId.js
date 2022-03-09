@@ -6,13 +6,11 @@ import InstructorDetail from "components/InstructorDetail";
 
 export default function InstructorId() {
   const { id } = useParams();
-  console.log(id);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getInstructorById(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <>
@@ -20,7 +18,7 @@ export default function InstructorId() {
       <div className="px-3 md:px-8 h-auto -mt-24">
         <div className="container mx-auto max-w-full">
           <div className="xl:col-start-1 xl:col-end-5 px-4 mb-16">
-            <InstructorDetail />
+           <InstructorDetail />
           </div>
         </div>
       </div>

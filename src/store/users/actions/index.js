@@ -43,7 +43,6 @@ export const getInstructorById = (id) => (dispatch) => {
   return axios
     .get(`https://api.cariilmu.co.id/api/v1/public/instructor/${id}`)
     .then((res) => {
-      console.log(res, "get ID Instructor");
       dispatch({
         type: GET_INSTRUCTORBYID,
         payload: res.data,

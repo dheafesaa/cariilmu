@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getUserById } from "store/users/actions";
-import ClassTable from "components/ClassTable";
+import ClassDetail from "components/ClassDetail";
 
 export default function ClassId() {
   const { id } = useParams();
@@ -10,7 +10,7 @@ export default function ClassId() {
 
   useEffect(() => {
     dispatch(getUserById(id));
-  }, [dispatch]);
+  }, [dispatch, id]);
 
   return (
     <>
@@ -18,7 +18,7 @@ export default function ClassId() {
       <div className="px-3 md:px-8 h-auto -mt-24">
         <div className="container mx-auto max-w-full">
           <div className="xl:col-start-1 xl:col-end-5 px-4 mb-16">
-            <ClassTable />
+            <ClassDetail />
           </div>
         </div>
       </div>

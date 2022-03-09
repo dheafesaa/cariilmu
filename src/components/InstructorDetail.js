@@ -8,6 +8,7 @@ import Linked from "assets/img/linkedin.png";
 
 export default function InstructorDetail() {
   const instructor = useSelector((state) => state.users.instructor.data);
+  
   return (
     <Card>
       <CardHeader color="purple" contentPosition="none">

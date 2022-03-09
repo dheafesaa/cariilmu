@@ -17,9 +17,9 @@ function App() {
         <Switch>
           <Route exact path="/" component={Dashboard} />
           <Route exact path="/class" component={Class} />
-          <Route exact path="/detail/:id" component={ClassId} />
+          <Route exact path="/classId/:id" component={ClassId} />
           <Route exact path="/instructor" component={Instructor} />
-          <Route exact path="/detailInstructor/:id" component={InstructorId} />
+          <Route exact path="/instructorId/:id" component={InstructorId} />
           <Route exact path="/login" component={SignIn} />
           <Redirect from="*" to="/" />
         </Switch>

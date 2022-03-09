@@ -3,7 +3,7 @@ import Card from "@material-tailwind/react/Card";
 import CardHeader from "@material-tailwind/react/CardHeader";
 import CardBody from "@material-tailwind/react/CardBody";
 
-export default function ClassForm() {
+export default function ClassDetail() {
   const user = useSelector((state) => state.users.user.data);
 
   return (
@@ -28,7 +28,6 @@ export default function ClassForm() {
                 <img className="rounded-lg" src={user?.cover} alt="..." />
               </div>
             </div>
-
             <div className="flex bg-gray-200 w-4/5 h-auto justify-between px-10 rounded-xl mb-6">
               <div className="flex flex-col text-center justify-center py-4">
                 <div className="font-medium text-lg mb-2">Instruktur</div>
@@ -57,7 +56,6 @@ export default function ClassForm() {
                 </div>
               </div>
             </div>
-
             <div className="flex justify-between w-full -mx-4">
               <div className="w-full lg:w-1/4 mb-6 px-2">
                 <button className="w-full bg-white hover:bg-gray-100 py-2 px-4 border border-purple-500 rounded-lg">
@@ -80,17 +78,14 @@ export default function ClassForm() {
                 </button>
               </div>
             </div>
-
             <div className="flex flex-col px-4 mb-6">
               <div className="font-bold text-2xl mb-3">Deskripsi</div>
               <p>{user?.description}</p>
             </div>
-            
             <div className="flex px-4 w-full mb-6">
               <div className="flex flex-col">
                 <div className="font-bold text-2xl mb-3">Materi Pelatihan</div>
                 {user?.training_materials.map((material) => {
-                  console.log(material);
                   return (
                     <div className="flex mb-3">
                       <li className="text-lg font-semibold" />
@@ -106,7 +101,6 @@ export default function ClassForm() {
                 })}
               </div>
             </div>
-
             <div className="flex px-4 w-full mb-6">
               <div className="flex flex-col">
                 <div className="font-bold text-2xl mb-3">Tujuan Pelatihan</div>
@@ -140,7 +134,6 @@ export default function ClassForm() {
                   })}
               </div>
             </div>
-
             {user?.aspects.length > 0 ? (
               <div className="flex px-4 w-full mb-6">
                 <div className="flex flex-col">
