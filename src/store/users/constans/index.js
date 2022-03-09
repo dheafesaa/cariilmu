@@ -1,0 +1,4 @@
+export const GET_USERS = "GET_USERS";
+export const GET_INSTRUCTOR = "GET_INSTRUCTOR";
+export const GET_USERBYID = "GET_USERBYID";
+export const GET_INSTRUCTORBYID = "GET_INSTRUCTORBYID";
