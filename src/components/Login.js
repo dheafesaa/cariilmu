@@ -6,6 +6,7 @@ import CardFooter from "@material-tailwind/react/CardFooter";
 import InputIcon from "@material-tailwind/react/InputIcon";
 import Button from "@material-tailwind/react/Button";
 import H5 from "@material-tailwind/react/Heading5";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -42,9 +43,16 @@ export default function Login() {
         </CardBody>
         <CardFooter>
           <div className="flex justify-center">
-            <Button color="lightBlue" buttonType="link" size="lg" ripple="dark">
-              Get Started
-            </Button>
+            <Link to={`/`}>
+              <Button
+                color="lightBlue"
+                buttonType="link"
+                size="lg"
+                ripple="dark"
+              >
+                Get Started
+              </Button>
+            </Link>
           </div>
         </CardFooter>
       </Card>

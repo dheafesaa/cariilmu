@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getInstructorById } from "store/users/actions";
-import InstructorForm from "components/InstructorForm";
+import InstructorDetail from "components/InstructorDetail";
 
-const DetailInstructor = () => {
+export default function InstructorId() {
   const { id } = useParams();
   console.log(id);
 
@@ -20,12 +20,10 @@ const DetailInstructor = () => {
       <div className="px-3 md:px-8 h-auto -mt-24">
         <div className="container mx-auto max-w-full">
           <div className="xl:col-start-1 xl:col-end-5 px-4 mb-16">
-            <InstructorForm />
+            <InstructorDetail />
           </div>
         </div>
       </div>
     </>
   );
-};
-
-export default DetailInstructor;
+}

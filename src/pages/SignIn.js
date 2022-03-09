@@ -1,7 +1,7 @@
 import React from "react";
 import Login from "components/Login";
 
-const SignIn = () => {
+export default function SignIn() {
   return (
     <>
       <div className="bg-light-blue-500 pt-14 pb-28 px-3 md:px-8 h-auto" />
@@ -14,6 +14,4 @@ const SignIn = () => {
       </div>
     </>
   );
-};
-
-export default SignIn;
+}

@@ -6,7 +6,7 @@ import Image from "@material-tailwind/react/Image";
 import Insta from "assets/img/instagram.png";
 import Linked from "assets/img/linkedin.png";
 
-export default function InstructorForm() {
+export default function InstructorDetail() {
   const instructor = useSelector((state) => state.users.instructor.data);
   return (
     <Card>

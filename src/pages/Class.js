@@ -1,4 +1,4 @@
-import ClassCard from "components/ClassCard";
+import ClassTable from "components/ClassTable";
 
 export default function Class() {
   return (
@@ -7,7 +7,7 @@ export default function Class() {
       <div className="px-3 md:px-8 h-auto -mt-24">
         <div className="container mx-auto max-w-full">
           <div className="grid grid-cols-1 px-4 mb-16">
-            <ClassCard />
+            <ClassTable />
           </div>
         </div>
       </div>

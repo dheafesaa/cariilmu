@@ -1,4 +1,4 @@
-import Example from "components/Example";
+import Hello from "components/Hello";
 
 export default function Dashboard() {
   return (
@@ -7,7 +7,7 @@ export default function Dashboard() {
       <div className="px-3 md:px-8 h-auto">
         <div className="container mx-auto max-w-full -mt-10">
           <div className="xl:col-start-4 xl:col-end-6 px-4 mb-14">
-            <Example />
+            <Hello />
           </div>
         </div>
       </div>

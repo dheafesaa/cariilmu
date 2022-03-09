@@ -85,7 +85,7 @@ export default function ClassForm() {
               <div className="font-bold text-2xl mb-3">Deskripsi</div>
               <p>{user?.description}</p>
             </div>
-
+            
             <div className="flex px-4 w-full mb-6">
               <div className="flex flex-col">
                 <div className="font-bold text-2xl mb-3">Materi Pelatihan</div>

@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getUserById } from "store/users/actions";
-import ClassForm from "components/ClassForm";
+import ClassTable from "components/ClassTable";
 
-export default function Detail() {
+export default function ClassId() {
   const { id } = useParams();
   const dispatch = useDispatch();
 
@@ -18,7 +18,7 @@ export default function Detail() {
       <div className="px-3 md:px-8 h-auto -mt-24">
         <div className="container mx-auto max-w-full">
           <div className="xl:col-start-1 xl:col-end-5 px-4 mb-16">
-            <ClassForm />
+            <ClassTable />
           </div>
         </div>
       </div>

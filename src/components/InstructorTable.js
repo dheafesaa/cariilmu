@@ -9,7 +9,7 @@ import Image from "@material-tailwind/react/Image";
 import DeleteIc from "assets/img/delete.svg";
 import EditIc from "assets/img/edit.svg";
 
-export default function InstructorCard() {
+export default function InstructorTable() {
   const dispatch = useDispatch();
   const stateInstructor = useSelector((state) => state.users.instructors);
 

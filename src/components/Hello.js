@@ -1,7 +1,7 @@
 import Card from "@material-tailwind/react/Card";
 import CardHeader from "@material-tailwind/react/CardHeader";
 
-export default function Example() {
+export default function Hello() {
   return (
     <Card>
       <CardHeader color="purple" contentPosition="none">
